@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnboardingSIGDB1.API", "OnboardingSIGDB1.API\OnboardingSIGDB1.API.csproj", "{A3CA9B4B-4D21-4366-A573-EF9CACD91A29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnboardingSIGDB1.Data", "OnboardingSIGDB1.Data\OnboardingSIGDB1.Data.csproj", "{A991779C-C839-4D67-AFA1-6BE57C277418}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnboardingSIGDB1.Domain", "OnboardingSIGDB1.Domain\OnboardingSIGDB1.Domain.csproj", "{5BBDE38C-4089-46A1-8CD2-9463116DFB5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnboardingSIGDB1.Application", "OnboardingSIGDB1.Application\OnboardingSIGDB1.Application.csproj", "{FC3937A8-1062-408F-AC66-A54ECB2D8DA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3CA9B4B-4D21-4366-A573-EF9CACD91A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CA9B4B-4D21-4366-A573-EF9CACD91A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CA9B4B-4D21-4366-A573-EF9CACD91A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CA9B4B-4D21-4366-A573-EF9CACD91A29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A991779C-C839-4D67-AFA1-6BE57C277418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A991779C-C839-4D67-AFA1-6BE57C277418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A991779C-C839-4D67-AFA1-6BE57C277418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A991779C-C839-4D67-AFA1-6BE57C277418}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BBDE38C-4089-46A1-8CD2-9463116DFB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BBDE38C-4089-46A1-8CD2-9463116DFB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BBDE38C-4089-46A1-8CD2-9463116DFB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BBDE38C-4089-46A1-8CD2-9463116DFB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC3937A8-1062-408F-AC66-A54ECB2D8DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3937A8-1062-408F-AC66-A54ECB2D8DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3937A8-1062-408F-AC66-A54ECB2D8DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3937A8-1062-408F-AC66-A54ECB2D8DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

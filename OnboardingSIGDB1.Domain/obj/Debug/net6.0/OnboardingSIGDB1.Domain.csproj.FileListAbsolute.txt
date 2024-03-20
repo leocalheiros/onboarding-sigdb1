@@ -1,0 +1,12 @@
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\bin\Debug\net6.0\OnboardingSIGDB1.Domain.deps.json
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\bin\Debug\net6.0\OnboardingSIGDB1.Domain.dll
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\bin\Debug\net6.0\OnboardingSIGDB1.Domain.pdb
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\obj\Debug\net6.0\OnboardingSIGDB1.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\obj\Debug\net6.0\OnboardingSIGDB1.Domain.AssemblyInfoInputs.cache
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\obj\Debug\net6.0\OnboardingSIGDB1.Domain.AssemblyInfo.cs
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\obj\Debug\net6.0\OnboardingSIGDB1.Domain.csproj.CoreCompileInputs.cache
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\obj\Debug\net6.0\OnboardingSIGDB1.Domain.dll
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\obj\Debug\net6.0\refint\OnboardingSIGDB1.Domain.dll
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\obj\Debug\net6.0\OnboardingSIGDB1.Domain.pdb
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\obj\Debug\net6.0\ref\OnboardingSIGDB1.Domain.dll
+C:\Users\LC\Desktop\.net\OnboardingSIGDB1\OnboardingSIGDB1.Domain\obj\Debug\net6.0\OnboardingSIGDB1.Domain.csproj.AssemblyReference.cache
