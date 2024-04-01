@@ -33,7 +33,7 @@ public class DeleteFuncionarioByIdHandler : IRequestHandler<DeleteFuncionarioByI
         var funcionario = await _deleteFuncionarioByIdService.
             ChecaFuncionarioExistente(request.Id, cancellationToken);
         var result = new DeleteFuncionarioByIdResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

@@ -31,7 +31,7 @@ public class CreateEmpresaHandler : IRequestHandler<CreateEmpresaCommand, Create
     {
         await _createEmpresaService.ChecaValidacoesCnpj(request, cancellationToken);
         var result = new CreateEmpresaResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

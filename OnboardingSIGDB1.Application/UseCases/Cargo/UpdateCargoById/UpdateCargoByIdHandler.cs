@@ -31,7 +31,7 @@ public class UpdateCargoByIdHandler : IRequestHandler<UpdateCargoByIdCommand, Up
     {
         var cargo = await _updateCargoByIdService.ChecaValidacoesUpdate(request.Id, request, cancellationToken);
         var result = new UpdateCargoByIdResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

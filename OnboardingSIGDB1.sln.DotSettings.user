@@ -1,0 +1,29 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6fa89958_002Ddcfe_002D4382_002D92fa_002D2b332a170f7f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from CreateCargoHandlerTests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:UseCases/d:Cargos/d:CreateCargoTests/f:CreateCargoHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ed11853a_002D4b04_002D477e_002D98f7_002D23b1209341f6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from CreateCargoHandlerTests.cs #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:Services/d:Cargos/f:CreateCargoServiceTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;xUnit::D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3::net6.0::OnboardingSIGDB1.Tests.UseCases.Cargos.CreateCargoUseCaseTests.CreateCargoValidatorTests.Validator_QuandoCommandForInvalida_DeveRetornarErro&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3::net6.0::OnboardingSIGDB1.Tests.Services.Cargos.DeleteCargoServiceTests.ChecaValidacoesDeleteCargo_CargoInexistente_DeveAdicionarNotificacao&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3::net6.0::OnboardingSIGDB1.Tests.UseCases.Cargos.DeleteCargoUseCaseTests.DeleteCargoHandlerTests.Handle_QuandoTiverNotificacoes_NaoDeveDeletarCargo&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3::net6.0::OnboardingSIGDB1.Tests.UseCases.Cargos.DeleteCargoUseCaseTests.DeleteCargoHandlerTests.Handle_QuandoNaoTiverNotificacoes_DeveDeletarCargo&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3::net6.0::OnboardingSIGDB1.Tests.UseCases.Cargos.UpdateCargoUseCaseTests.UpdateCargoHandlerTests.Handle_QuandoCargoTiverNotificacoes_NaoDeveAtualizarCargo&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3::net6.0::OnboardingSIGDB1.Tests.UseCases.Cargos.UpdateCargoUseCaseTests.UpdateCargoValidatorTests.Validator_QuandoCommandForInvalida_DeveRetornarErro&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;xUnit::D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3::net6.0::OnboardingSIGDB1.Tests.UseCases.Cargos.UpdateCargoUseCaseTests.UpdateCargoValidatorTests.Validator_QuandoCommandForValida_DeveRetornarSucesso&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:UseCases/d:Cargos/d:CreateCargoUseCaseTests/f:CreateCargoValidatorTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:Services/d:Cargos/f:DeleteCargoServiceTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:UseCases/d:Cargos/d:DeleteCargoUseCaseTests/f:DeleteCargoHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:UseCases/d:Cargos/d:CreateCargoUseCaseTests/f:CreateCargoHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:Services/d:Cargos/f:FindAllCargoServiceTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:UseCases/d:Cargos/d:FindAllCargoUseCaseTests/f:FindAllCargoHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:Services/d:Cargos/f:FindCargoByIdServiceTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:UseCases/d:Cargos/d:FindCargoByIdUseCaseTests/f:FindCargoByIdHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:Services/d:Cargos/f:UpdateCargoByIdServiceTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:UseCases/d:Cargos/d:UpdateCargoUseCaseTests/f:UpdateCargoHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFolder&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:UseCases&lt;/ProjectFolder&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -2,7 +2,7 @@
 
 namespace OnboardingSIGDB1.Application.UseCases.Cargo.UpdateCargoById;
 
-public class UpdateCargoByIdValidator : AbstractValidator<CreateCargoCommand>
+public class UpdateCargoByIdValidator : AbstractValidator<UpdateCargoByIdCommand>
 {
     public UpdateCargoByIdValidator()
     {

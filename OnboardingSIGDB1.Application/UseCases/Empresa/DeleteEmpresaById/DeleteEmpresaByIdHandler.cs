@@ -31,7 +31,7 @@ public class DeleteEmpresaByIdHandler : IRequestHandler<DeleteEmpresaByIdQuery, 
     {
         var empresa = await _deleteEmpresaByIdService.ChecaValidacoesDeleteEmpresa(request.Id, cancellationToken);
         var result = new DeleteEmpresaByIdResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

@@ -31,7 +31,7 @@ public class CreateCargoHandler : IRequestHandler<CreateCargoCommand, CreateCarg
     {
         await _createCargoService.ChecaValidacoesCargo(request, cancellationToken);
         var result = new CreateCargoResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

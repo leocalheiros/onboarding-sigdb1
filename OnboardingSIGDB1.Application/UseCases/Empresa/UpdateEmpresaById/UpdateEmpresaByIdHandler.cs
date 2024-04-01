@@ -31,7 +31,7 @@ public class UpdateEmpresaByIdHandler : IRequestHandler<UpdateEmpresaByIdCommand
     {
         var empresa = await _updateEmpresaService.ChecaValidacoesUpdate(request.Id, request, cancellationToken);
         var result = new UpdateEmpresaByIdResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

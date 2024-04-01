@@ -17,7 +17,7 @@ public class NotificationFilter : IAsyncResultFilter
 
     public async Task OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next)
     {
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
             context.HttpContext.Response.ContentType = "application/json";

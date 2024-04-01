@@ -22,7 +22,7 @@ public class FindCargoByIdHandler : IRequestHandler<FindCargoByIdQuery, FindCarg
     {
         var cargo = await _findCargoByIdService.ValidaCargoExistente(request.Id, cancellationToken);
         var result = new FindCargoByIdResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

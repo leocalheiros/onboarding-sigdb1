@@ -4,16 +4,20 @@ namespace OnboardingSIGDB1.Domain.Notifications;
 
 public class NotificationContext
 {
-    private readonly List<Notification> _notifications;
+    public readonly List<Notification> _notifications;
     public IReadOnlyCollection<Notification> Notifications => _notifications;
-    public bool HasNotifications => _notifications.Any();
+
+    public virtual bool HasNotifications()
+    {
+        return _notifications.Any();
+    }
     
     public NotificationContext()
     {
         _notifications = new List<Notification>();
     }
 
-    public void AddNotification(string message)
+    public virtual void AddNotification(string message)
     {
         _notifications.Add(new Notification(message));
     }
@@ -50,5 +54,6 @@ public class NotificationContext
             AddNotification(error.ErrorMessage);
         }
     }
+    
 }
 

@@ -22,7 +22,7 @@ public class FindEmpresaByIdHandler : IRequestHandler<FindEmpresaByIdQuery, Find
     {
         var empresa = await _findEmpresaByIdService.ValidaEmpresaExistente(request.Id, cancellationToken);
         var result = new FindEmpresaByIdResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

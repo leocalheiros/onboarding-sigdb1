@@ -29,7 +29,7 @@ public class VincularFuncionarioCargoIdHandler : IRequestHandler<VincularFuncion
         var funcionarioCargo = await _service.VincularFuncionarioCargoIdAsync(request, cancellationToken);
         var result = new VincularFuncionarioCargoIdResult();
 
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

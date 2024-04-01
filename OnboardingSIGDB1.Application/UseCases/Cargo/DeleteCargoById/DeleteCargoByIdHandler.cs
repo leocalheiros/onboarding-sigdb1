@@ -31,7 +31,7 @@ public class DeleteCargoByIdHandler : IRequestHandler<DeleteCargoByIdQuery, Dele
     {
         var cargo = await _deleteCargoByIdService.ChecaValidacoesDeleteCargo(request.Id, cancellationToken);
         var result = new DeleteCargoByIdResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

@@ -34,7 +34,7 @@ public class UpdateFuncionarioByIdHandler : IRequestHandler<UpdateFuncionarioByI
         var funcionario =
             await _updateFuncionarioByIdService.ChecaValidacoesUpdate(request.Id, request, cancellationToken);
         var result = new UpdateFuncionarioByIdResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

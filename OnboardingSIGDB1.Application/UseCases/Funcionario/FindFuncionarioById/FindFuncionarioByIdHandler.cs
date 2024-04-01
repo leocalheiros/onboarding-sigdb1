@@ -23,7 +23,7 @@ public class FindFuncionarioByIdHandler : IRequestHandler<FindFuncionarioByIdQue
     {
         var funcionario = await _findFuncionarioByIdService.ValidaFuncionarioExistente(request.Id, cancellationToken);
         var result = new FindFuncionarioByIdResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }

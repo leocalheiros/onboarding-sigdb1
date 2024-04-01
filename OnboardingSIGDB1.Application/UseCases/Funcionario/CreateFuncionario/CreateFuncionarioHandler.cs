@@ -32,7 +32,7 @@ public class CreateFuncionarioHandler : IRequestHandler<CreateFuncionarioCommand
     {
         await _createFuncionarioService.ChecaValidacoesCpf(request, cancellationToken);
         var result = new CreateFuncionarioResult();
-        if (_notificationContext.HasNotifications)
+        if (_notificationContext.HasNotifications())
         {
             return result;
         }
