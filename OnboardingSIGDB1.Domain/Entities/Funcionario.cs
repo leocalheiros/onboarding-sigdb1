@@ -26,6 +26,11 @@ public class Funcionario : BaseEntity
         Cpf = cpf;
         DataContratacao = dataContratacao;
     }
+
+    public void AlterarIdFuncionario(long id)
+    {
+        Id = id;
+    }
     
     public void AlterarNomeFuncionario(string nome)
     {

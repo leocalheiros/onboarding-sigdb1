@@ -25,5 +25,6 @@
     &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:Services/d:Cargos/f:UpdateCargoByIdServiceTests.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:UseCases/d:Cargos/d:UpdateCargoUseCaseTests/f:UpdateCargoHandlerTests.cs&lt;/ProjectFile&gt;&#xD;
     &lt;ProjectFolder&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:UseCases&lt;/ProjectFolder&gt;&#xD;
+    &lt;ProjectFile&gt;D7D63260-2BE3-44A0-B9BC-DD8D3819E3E3/d:Services/d:Funcionario/f:VincularFuncionarioCargoIdServiceTests.cs&lt;/ProjectFile&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

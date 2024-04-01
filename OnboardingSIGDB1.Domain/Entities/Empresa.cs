@@ -17,7 +17,7 @@ public class Empresa : BaseEntity
     public string Cnpj { get; private set; }
     public DateTimeOffset DataFundacao { get; private set; }
     public virtual ICollection<Funcionario> Funcionarios { get; private set; }
-
+    
     public void AlterarNomeEmpresa(string nome)
     {
         Nome = nome;
