@@ -23,9 +23,19 @@ builder.Services.AddSwaggerGen(options =>
     }
 );
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin() 
+            .AllowAnyMethod() 
+            .AllowAnyHeader(); 
+    });
+});
 
 var app = builder.Build();
 
+app.UseCors("AllowAll");
 
 if (app.Environment.IsDevelopment())
 {
