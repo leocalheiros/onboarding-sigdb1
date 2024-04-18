@@ -34,7 +34,7 @@ public class UpdateEmpresaByIdService : BaseEmpresaService, IUpdateEmpresaByIdSe
         }
         
         var empresa = await _empresaRepository.FindByCnpjAsync(cnpjValidated, cancellationToken);
-        if (empresa != null)
+        if (empresa != null & cnpjValidated != empresaExistente.Cnpj)
         {
             _notificationContext.AddNotification("CNPJ já existente!");
             return null;

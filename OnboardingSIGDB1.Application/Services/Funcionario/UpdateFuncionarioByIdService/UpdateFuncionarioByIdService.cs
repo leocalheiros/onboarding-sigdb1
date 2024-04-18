@@ -34,8 +34,8 @@ public class UpdateFuncionarioByIdService : BaseFuncionarioService, IUpdateFunci
             return null;
         }
 
-        var possibleFuncionarioByNewCpf = await ObterFuncionarioPorCpfAsync(cpfCleanned, cancellationToken);
-        if (possibleFuncionarioByNewCpf != null)
+        var possibleFuncionarioByNewCpf = await ObterFuncionarioPorCpfAsync(funcionarioExistente.Cpf, cpfCleanned, cancellationToken);
+        if (possibleFuncionarioByNewCpf != null & cpfCleanned != funcionarioExistente.Cpf)
         {
             return null;
         }
@@ -56,10 +56,10 @@ public class UpdateFuncionarioByIdService : BaseFuncionarioService, IUpdateFunci
         return funcionarioExistente;
     }
 
-    private async Task<Domain.Entities.Funcionario> ObterFuncionarioPorCpfAsync(string cpf, CancellationToken cancellationToken)
+    private async Task<Domain.Entities.Funcionario> ObterFuncionarioPorCpfAsync(string cpf, string cpfCleanned, CancellationToken cancellationToken)
     {
         var possibleFuncionarioByNewCpf = await _funcionarioRepository.FindByCpfAsync(cpf, cancellationToken);
-        if (possibleFuncionarioByNewCpf != null)
+        if (possibleFuncionarioByNewCpf != null & cpfCleanned != cpf)
         {
             _notificationContext.AddNotification("Conta com esse CPF já existente!");
         }

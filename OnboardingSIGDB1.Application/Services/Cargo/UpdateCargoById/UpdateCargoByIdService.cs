@@ -22,7 +22,7 @@ public class UpdateCargoByIdService : IUpdateCargoByIdService
         {
             return null;
         }
-        var descricaoExistente = await _cargoRepository.GetByDescricaoAsync(cargoExistente.Descricao, cancellationToken);
+        var descricaoExistente = await _cargoRepository.GetByDescricaoAsync(command.Descricao, cancellationToken);
         if (descricaoExistente != null)
         {
             _notificationContext.AddNotification("Descrição de cargo já existente!");
