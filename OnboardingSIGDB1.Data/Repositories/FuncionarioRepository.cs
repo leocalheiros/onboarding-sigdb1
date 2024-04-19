@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnboardingSIGDB1.Data.Persistence;
+using OnboardingSIGDB1.Domain.Dtos;
 using OnboardingSIGDB1.Domain.Entities;
 using OnboardingSIGDB1.Domain.Entities.Common;
 using OnboardingSIGDB1.Domain.Interfaces;
@@ -11,10 +12,32 @@ public class FuncionarioRepository : BaseRepository<Funcionario>, IFuncionarioRe
     public FuncionarioRepository(OnboardingSIGContext context) : base(context)
     {
     }
-
-    public async Task<List<Funcionario>> GetAllAsync(CancellationToken cancellationToken)
+    
+    public async Task<List<FuncionarioDto>> GetAllAsync(CancellationToken cancellationToken)
     {
-        return await _context.Funcionarios.ToListAsync(cancellationToken);
+        var consulta = await _context.Funcionarios
+            .Include(e => e.Empresa)
+            .Include(c => c.CargosFuncionario)
+                .ThenInclude(c => c.Cargo)
+            .Select(f => new FuncionarioDto()
+            {
+                Id = f.Id,
+                Nome = f.Nome,
+                DataContratacao = f.DataContratacao,
+                Cpf = f.Cpf,
+                EmpresaNome = f.Empresa.Nome,
+                Cargos = 
+                    f.CargosFuncionario
+                        .OrderByDescending(o => o.DataVinculo)
+                        .Select(c => new CargosDto()
+                    {
+                        Id = c.CargoId,
+                        CargoDescricao = c.Cargo.Descricao
+                    }).FirstOrDefault()
+                })
+            .ToListAsync(cancellationToken);
+
+        return consulta;
     }
     
     public async Task<Funcionario> FindByCpfAsync(string cpf, CancellationToken cancellationToken)
@@ -50,4 +73,25 @@ public class FuncionarioRepository : BaseRepository<Funcionario>, IFuncionarioRe
 
         return await query.ToListAsync(cancellationToken);
     }
+    
+    // public async Task<List<FuncionarioDTO>> GetAllAsync(CancellationToken cancellationToken)
+    // {
+    //     var consulta = await _context.Funcionarios.Include(e => e.Empresa)
+    //         .Include(c => c.CargosFuncionario)
+    //         .ThenInclude(c => c.Cargo)
+    //         .Select(f => new FuncionarioDTO()
+    //         {
+    //             Id = f.Id,
+    //             Nome = f.Nome,
+    //             Cargos = 
+    //                 f.CargosFuncionario.Select(c => new CargosDTO()
+    //                 {
+    //                     Id = c.CargoId,
+    //                     CargoDescricao = c.Cargo.Descricao
+    //                 }).ToList()
+    //         })
+    //         .ToListAsync(cancellationToken);
+    //
+    //     return consulta;
+    // }
 }

@@ -1,6 +1,8 @@
-﻿namespace OnboardingSIGDB1.Application.Services.Funcionario.FindAllFuncionarioService;
+﻿using OnboardingSIGDB1.Domain.Dtos;
+
+namespace OnboardingSIGDB1.Application.Services.Funcionario.FindAllFuncionarioService;
 
 public interface IFindAllFuncionarioService 
 {
-    Task<List<Domain.Entities.Funcionario>> RetornaFuncionariosExistentes(CancellationToken cancellationToken);
+    Task<List<FuncionarioDto>> RetornaFuncionariosExistentes(CancellationToken cancellationToken);
 }
